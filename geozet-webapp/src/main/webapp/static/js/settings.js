@@ -18,7 +18,7 @@ OpenLayers.ProxyHost = 'proxy.jsp?';
 // urls
 Geozet.config.bekendmakingenWFS = 'http://geodata.nationaalgeoregister.nl/pdok/wfs?';
 Geozet.config.WMSC = 'http://geodata.nationaalgeoregister.nl/wmsc?';
-Geozet.config.gazetteer = {url:"http://geodata.nationaalgeoregister.nl/geocoder/Geocoder?", param:"zoekterm"};
+Geozet.config.gazetteer = {url:"http://nieuwsinkaart.nl/cgi-bin/yahoogeocoderopenls.cgi?", param:"zoekterm"};
 Geozet.config.vlakgerichteBekendmakingenService = "vlakbekendmakingen?";
 
 OpenLayers.Lang.nl = OpenLayers.Util.extend(

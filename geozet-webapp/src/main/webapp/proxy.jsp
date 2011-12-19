@@ -1,11 +1,12 @@
 <%@page session="false"%>
 <%@page import="java.net.*,java.io.*"%>
 <%!String[] serverUrls = {
-        	// lijst met toegestane servers; deze lijst aanpassen per omgeving
+            // lijst met toegestane servers; deze lijst aanpassen per omgeving
             "http://localhost:8020",
-            "http://test.geodata.nationaalgeoregister.nl/",
-			"http://acceptatie.geodata.nationaalgeoregister.nl/",
-			"http://geodata.nationaalgeoregister.nl/"			// NOTE - geen komaa na de laatste url
+            //"http://test.geodata.nationaalgeoregister.nl/",
+            //"http://acceptatie.geodata.nationaalgeoregister.nl/",
+            "http://geodata.nationaalgeoregister.nl/",
+            "http://nieuwsinkaart.nl/"	// NOTE - geen komma na de laatste url
     };%>
 <%
     try {
