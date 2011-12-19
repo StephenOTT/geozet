@@ -43,7 +43,7 @@ public class OpenLSClientIntegrationTest {
     public void testDoGetOpenLSRequest() {
         final Map<String, String> openLSParams = new TreeMap<String, String>();
         // final String url = "http://geoserver.nl/geocoder/NLaddress.aspx";
-        final String url = "http://geodata.nationaalgeoregister.nl/geocoder/Geocoder";
+        final String url = "http://nieuwsinkaart.nl/cgi-bin/yahoogeocoderopenls.cgi";
         openLSParams.put(StringConstants.OPENLS_REQ_PARAM_SEARCH.code,
                 "hengelo");
         // openLSParams.put("UID", "put your key here");
@@ -63,6 +63,7 @@ public class OpenLSClientIntegrationTest {
      * @throws IOException
      *             Signals that an I/O exception has occurred.
      */
+	 /* disabled because Kadaster has shut this service down.
     @Test
     public void testDoPostOpenLSRequest() throws java.io.IOException {
         final String requestString = this
@@ -76,6 +77,7 @@ public class OpenLSClientIntegrationTest {
         assertNotNull(gcr);
         assertTrue(gcr.getGeocodeResponseListSize() == 0);
     }
+	*/
 
     /**
      * Test open ls free form post such as openrouteservice.org. Test methode
