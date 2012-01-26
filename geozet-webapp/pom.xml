@@ -398,13 +398,6 @@
 		<url>https://github.com/geozet</url>
 	</organization>
 	<build>
-		<extensions>
-			<extension>
-				<groupId>org.jvnet.wagon-svn</groupId>
-				<artifactId>wagon-svn</artifactId>
-				<version>1.12</version>
-			</extension>
-		</extensions>
 		<finalName>${geozet.finalname}</finalName>
 		<defaultGoal>install</defaultGoal>
 		<plugins>
@@ -541,8 +534,7 @@
 							<addClasspath>true</addClasspath>
 						</manifest>
 						<manifestEntries>
-							<Implementation-Build>branch: ${buildScmBranch} rev:
-								${buildNumber}</Implementation-Build>
+							<Implementation-Build>branch: ${scmBranch} rev: ${buildNumber}</Implementation-Build>
 							<SCM-Revision>${scm.revision}</SCM-Revision>
 							<url>${project.url}</url>
 							<release>${project.version}</release>
